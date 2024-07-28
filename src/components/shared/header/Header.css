@@ -1,0 +1,39 @@
+header
+{
+    width: 100%;
+    padding-top: 60px;
+}
+header button
+{
+    width: 230px;
+    height: 68px;
+    border-radius: var(--border-radius-14);
+    border: 1px solid var(--dark-clr);
+    background-color: transparent;
+    font-size: var(--font-size-20);
+    cursor: pointer;
+}
+header button:hover
+{
+    background-color: var(--dark-clr);
+    color: var(--gray-clr);
+}
+header .header
+{
+    width: 90%;
+    margin: auto;
+}
+header .header nav ul
+{
+    gap: 40px;
+}
+.header ul li
+{
+    padding: 10px 10px;
+    font-size: var(--font-size-20);
+}
+.header ul li:hover
+{
+    color: var(--green-clr);
+    cursor: pointer;
+}
