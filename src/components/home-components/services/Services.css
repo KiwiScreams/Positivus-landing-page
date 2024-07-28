@@ -52,6 +52,11 @@
     gap: 16px;
     font-size: var(--font-size-28);
 }
+.service-container .service:nth-child(3) .learn-btn,
+.service-container .service:nth-child(6) .learn-btn
+{
+    color: var(--white-clr);
+}
 .service-container .service:nth-child(1),
 .service-container .service:nth-child(4)
 {

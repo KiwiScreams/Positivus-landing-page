@@ -1,13 +1,14 @@
 import Service from "./Service"
 import "./Services.css"
 import serviceImage_1 from "../../../assets/images/home/service_1.png"
-import serviceImage_2 from "../../../assets/images/home/service_2.jpg"
+import serviceImage_2 from "../../../assets/images/home/service_2.svg"
 import serviceImage_3 from "../../../assets/images/home/service_3.png"
 import serviceImage_4 from "../../../assets/images/home/service_4.png"
 import serviceImage_5 from "../../../assets/images/home/service_5.png"
 import serviceImage_6 from "../../../assets/images/home/service_6.png"
 
 import arrow_1 from "../../../assets/images/home/arrow_1.png"
+import arrow_2 from "../../../assets/images/home/arrow_2.png"
 function Services() {
     return (
         <>
@@ -52,7 +53,7 @@ function Services() {
                                 <h3>Marketing</h3>
                             </div>
                             <div className="learn-btn">
-                                <img src={arrow_1} alt="" />Learn more
+                                <img src={arrow_2} alt="" />Learn more
                             </div>
                         </div>
                         <div className="service-image">
@@ -94,7 +95,7 @@ function Services() {
                                 <h3>Tracking</h3>
                             </div>
                             <div className="learn-btn">
-                                <img src={arrow_1} alt="" />Learn more
+                                <img src={arrow_2} alt="" />Learn more
                             </div>
                         </div>
                         <div className="service-image">
