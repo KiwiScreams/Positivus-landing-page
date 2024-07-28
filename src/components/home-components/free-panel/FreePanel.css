@@ -5,6 +5,7 @@
     background-color: var(--gray-clr);
     border-radius: var(--border-radius-45);
     height: 348px;
+    margin-bottom: 160px;
 }
 .panel button
 {
