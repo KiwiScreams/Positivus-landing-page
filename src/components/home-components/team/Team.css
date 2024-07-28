@@ -1,0 +1,80 @@
+.team-section
+{
+    width: 90%;
+    margin: auto;
+}
+.team-section .team-header
+{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+.team-section .team-header p
+{
+    width: 50%;
+}
+.team-section .team-header h2
+{
+    background-color: var(--green-clr);
+    padding: 5px 7px;
+    border-radius: var(--border-radius-7);
+}
+.team-container
+{
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.person
+{
+    background-color: var(--white-clr);
+    border-radius: var(--border-radius-45);
+    border: 1px solid var(--black-clr);
+    width: calc(30%);
+    padding: 40px 40px 0 40px;
+    height: 330px;
+    box-shadow: 0 7px 0 0 var(--black-clr);
+}
+.person .flex img
+{
+    margin-right: 40px;
+}
+.person .linkedin
+{
+    border-radius: 50%;
+    background-color: var(--black-clr);
+    color: var(--green-clr);
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 800;
+}
+.person-info-header
+{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--black-clr);
+    margin-bottom: 28px;
+}
+.team-section button
+{
+    width: 264px;
+    height: 68px;
+    font-size: var(--font-size-20);
+    background-color: var(--dark-clr);
+    color: var(--white-clr);
+    border-radius: var(--border-radius-14);
+    border: 1px solid var(--dark-clr);
+    margin-top: 40px;
+    float: right;
+}
+.team-section button:hover
+{
+    background-color: transparent;
+    color: var(--black-clr);
+}
