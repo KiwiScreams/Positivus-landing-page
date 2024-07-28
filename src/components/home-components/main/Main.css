@@ -1,0 +1,44 @@
+.main-section
+{
+    width: 90%;
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.main-section .info-container h1
+{
+    letter-spacing: 1px;
+    font-family: 'space-grotesk';
+}
+.main-section .info-container
+{
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+.main-section .info-container button
+{
+    width: 264px;
+    height: 68px;
+    font-size: var(--font-size-20);
+    background-color: var(--dark-clr);
+    color: var(--white-clr);
+    border-radius: var(--border-radius-14);
+    border: 1px solid var(--dark-clr);
+}
+.main-section .info-container button:hover
+{
+    background-color: transparent;
+    color: var(--black-clr);
+}
+.main-section .info-container, 
+.main-section .image-container
+{
+    width: 40%;
+}
+.main-section .image-container img
+{
+    width: 100%;
+}

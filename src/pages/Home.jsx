@@ -1,7 +1,9 @@
-function Home()
-{
+import Main from "../components/home-components/main/Main"
+
+function Home() {
     return (
         <>
+            <Main />
         </>
     )
 }

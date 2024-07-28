@@ -9,6 +9,11 @@
   outline: none;
   transition: 0.3s;
 }
+@font-face
+{
+  font-family: 'space-grotesk';
+  src: url(../src/assets/fonts/Bellefair\,Josefin_Sans\,Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf);
+}
 .flex
 {
   display: flex;
@@ -58,4 +63,8 @@ p
 {
   font-size: var(--font-size-18);
   color: var(--black-clr);
+}
+button, a
+{
+  cursor: pointer;
 }
