@@ -1,5 +1,12 @@
 import "./Main.css"
 import Illustration from "../../../assets/images/home/Illustration.png"
+import companyLogo from "../../../assets/images/home/Company logo.svg"
+import companyLogo_1 from "../../../assets/images/home/Company logo - 1.svg"
+import companyLogo_2 from "../../../assets/images/home/Company logo - 2.svg"
+import companyLogo_3 from "../../../assets/images/home/Company logo - 3.svg"
+import companyLogo_4 from "../../../assets/images/home/Company logo - 4.svg"
+import companyLogo_5 from "../../../assets/images/home/Company logo - 5.svg"
+
 function Main() {
     return (
         <>
@@ -12,6 +19,14 @@ function Main() {
                 <div className="image-container">
                     <img src={Illustration} alt="" />
                 </div>
+            </section>
+            <section className="image-section">
+                <img src={companyLogo} alt="" />
+                <img src={companyLogo_1} alt="" />
+                <img src={companyLogo_2} alt="" />
+                <img src={companyLogo_3} alt="" />
+                <img src={companyLogo_4} alt="" />
+                <img src={companyLogo_5} alt="" />
             </section>
         </>
     )

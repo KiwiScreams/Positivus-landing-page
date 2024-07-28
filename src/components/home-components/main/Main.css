@@ -42,3 +42,17 @@
 {
     width: 100%;
 }
+.image-section
+{
+    width: 90%;
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 140px;
+}
+.image-section img
+{
+    filter: grayscale(100%);
+}

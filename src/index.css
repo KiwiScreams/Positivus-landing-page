@@ -29,6 +29,7 @@
   --black-clr: #000;
   --white-clr: #fff;
   /* BORDER RADIUS */
+  --border-radius-7: 7px;
   --border-radius-14: 14px;
   --border-radius-45: 45px;
   /* FONT SIZE */
@@ -36,6 +37,7 @@
   --font-size-40: 40px;
   --font-size-30: 30px;
   --font-size-20: 20px;
+  --font-size-28: 28px;
   --font-size-18: 18px;
 }
 /* DESKTOP */
@@ -67,4 +69,18 @@ p
 button, a
 {
   cursor: pointer;
+}
+::-webkit-scrollbar
+{
+  display: block;
+  width: 10px;
+}
+::-webkit-scrollbar-track
+{
+  background-color: var(--white-clr);
+}
+::-webkit-scrollbar-thumb
+{
+  background-color: var(--green-clr);
+  border-radius: 20px;
 }
