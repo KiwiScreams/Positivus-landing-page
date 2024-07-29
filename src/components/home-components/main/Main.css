@@ -56,3 +56,19 @@
 {
     filter: grayscale(100%);
 }
+.form-header
+{
+    width: fit-content;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+.form-header label
+{
+    margin-right: 35px;
+    font-size: var(--font-size-18);
+}
+.form-header input[type="radio"]
+{
+    width: 28px;
+    height: 28px;
+}

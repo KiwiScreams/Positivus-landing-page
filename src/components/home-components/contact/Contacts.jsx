@@ -11,9 +11,9 @@ function Contacts() {
                 <div className="contacts-container flex">
                     <form>
                         <div className="form-header flex">
-                            <input type="radio" name="hi" />
+                            <input type="radio" name="radio" />
                             <label htmlFor="hi">Say Hi</label>
-                            <input type="radio" name="quete" />
+                            <input type="radio" name="radio" />
                             <label htmlFor="hi">Get a Quote</label>
                         </div>
                         <div className="form-body">
