@@ -56,6 +56,7 @@
     align-items: center;
     gap: 16px;
     font-size: var(--font-size-28);
+    cursor: pointer;
 }
 .service-container .service:nth-child(3) .learn-btn,
 .service-container .service:nth-child(6) .learn-btn

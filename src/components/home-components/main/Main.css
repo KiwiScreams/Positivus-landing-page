@@ -55,6 +55,11 @@
 .image-section img
 {
     filter: grayscale(100%);
+    cursor: pointer;
+}
+.image-section img:hover
+{
+    transform: scale(1.2);
 }
 .form-header
 {

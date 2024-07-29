@@ -16,6 +16,7 @@ footer .footer-header .footer-links ul
 footer .footer-header .footer-links ul li:hover
 {
     color: var(--green-clr);
+    text-decoration-color: var(--green-clr);
 }
 footer .footer-header .footer-social-links
 {
@@ -24,6 +25,7 @@ footer .footer-header .footer-social-links
 footer .footer-header .footer-social-links img:hover
 {
     transform: scale(1.5);
+    cursor: pointer;
 }
 footer .footer-body
 {
@@ -97,4 +99,10 @@ footer .footer-bottom ul li
 {
     text-decoration: underline;
     margin-right: 8px;
+}
+footer .footer-bottom ul li:hover
+{
+    cursor: pointer;
+    color: var(--green-clr);
+    text-decoration-color: var(--green-clr);
 }
