@@ -37,60 +37,64 @@ function Carousel() {
                 job: "Marketing Director at XYZ Corp"
             }
         ];
-    const [carouselData, setCarouselData] = useState(slides[0].value);
     const [activeIndex, setActiveIndex] = useState(0);
     const [currentSlide, setCurrentSlide] = useState(slides[0]);
     function handleClick(index) {
-        console.log(index);
-        const textSlider = slides[index].value;
-        setCarouselData(textSlider);
-        setCurrentSlide(slides[index]);
         setActiveIndex(index);
+        setCurrentSlide(slides[index]);
     }
+
     function handlePrev() {
         const prevIndex = activeIndex - 1;
         if (prevIndex < 0) {
             setActiveIndex(slides.length - 1);
-            setCarouselData(slides[slides.length - 1].value);
             setCurrentSlide(slides[slides.length - 1]);
         } else {
             setActiveIndex(prevIndex);
-            setCarouselData(slides[prevIndex].value);
             setCurrentSlide(slides[prevIndex]);
         }
     }
+
     function handleNext() {
         const nextIndex = activeIndex + 1;
         if (nextIndex >= slides.length) {
             setActiveIndex(0);
-            setCarouselData(slides[0].value);
             setCurrentSlide(slides[0]);
         } else {
             setActiveIndex(nextIndex);
-            setCarouselData(slides[nextIndex].value);
             setCurrentSlide(slides[nextIndex]);
         }
     }
     return (
         <>
-            <div className="text">
-                <p>"{carouselData}"</p>
+            <div className="carousel-container">
+                <div className="slides-container">
+                    {slides.map((slide, index) => (
+                        <div
+                            key={index}
+                            className={`slide ${activeIndex === index ? "active" : ""}`}
+                            onClick={() => handleClick(index)}
+                        >
+                            <p>"{slide.value}"</p>
+                            <h4>{slide.person}</h4>
+                            <h4>{slide.job}</h4>
+                        </div>
+                    ))}
+                </div>
+                <div className="flex-row">
+                    <button onClick={handlePrev}>
+                        <img src={leftArrow} alt="Previous" />
+                    </button>
+                    {slides.map((data, i) => (
+                        <div key={i} onClick={() => handleClick(i)}>
+                            <img src={activeIndex === i ? activePoint : point} alt="" />
+                        </div>
+                    ))}
+                    <button onClick={handleNext}>
+                        <img src={rightArrow} alt="Next" />
+                    </button>
+                </div>
             </div>
-            <div className="flex-row">
-                <button onClick={handlePrev}>
-                    <img src={leftArrow} alt="Previous" />
-                </button>
-                {slides.map((data, i) => (
-                    <div key={i} onClick={() => handleClick(i)}>
-                        <img src={activeIndex === i ? activePoint : point} alt="" />
-                    </div>
-                ))}
-                <button onClick={handleNext}>
-                    <img src={rightArrow} alt="Next" />
-                </button>
-            </div>
-            <h4>{currentSlide.person}</h4>
-            <h4>{currentSlide.job}</h4>
         </>
     )
 }
