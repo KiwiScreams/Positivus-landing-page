@@ -1,10 +1,21 @@
 import textLogo from "../../../assets/images/core/TextLogo.svg"
 import "./Header.css"
 import { Link } from "react-scroll"
+import { useState, useEffect } from "react"
 function Header() {
+    const [color, setColor] = useState(false)
+    const changeColor = () => {
+        if (window.scrollY >= 90) {
+            setColor(true)
+        }
+        else {
+            setColor(false)
+        }
+    }
+    window.addEventListener('scroll', changeColor);
     return (
         <>
-            <header>
+            <header className={color ? 'header-bg' : ''}>
                 <div className="header">
                     <nav className="flex">
                         <h1><Link to="home" spy={true} smooth={true} offset={-50} duration={500}><img src={textLogo} alt="" /></Link></h1>

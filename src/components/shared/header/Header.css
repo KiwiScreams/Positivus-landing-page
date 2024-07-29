@@ -2,6 +2,7 @@ header
 {
     width: 100%;
     padding-top: 60px;
+    position: fixed;
 }
 header button
 {
@@ -35,4 +36,9 @@ header .header nav ul
 {
     color: var(--green-clr);
     cursor: pointer;
+}
+.header-bg
+{
+    background-color: red;
+    color: white;
 }
