@@ -31,13 +31,9 @@ function Contacts() {
         setErrors(errors);
         if (Object.keys(errors).length === 0) {
             setIsSubmitted(true);
-            setTimeout(() => {
-                setIsSubmitted(false);
-                setSuccessMessage('');
-                setName('');
-                setEmail('');
-                setMessage('');
-            }, 3000);
+            setName('');
+            setEmail('');
+            setMessage('');
         }
     }
     return (
@@ -58,7 +54,7 @@ function Contacts() {
                         <div className="form-body">
                             <div className="inp">
                                 <label htmlFor="name">Name</label>
-                                <input type="text" name="name" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} className={errors.name && errors.name.props.className === 'fa-solid fa-check' ? 'valid' : ''}/>
+                                <input type="text" name="name" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} className={errors.name && errors.name.props.className === 'fa-solid fa-check' ? 'valid' : ''} />
                                 {errors.name && <div className="error">{errors.name}</div>}
                             </div>
                             <div className="inp">

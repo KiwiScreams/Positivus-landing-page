@@ -145,3 +145,7 @@
 {
     color: var(--green-clr);
 }
+.form-header.error
+{
+    border: 1px solid red;
+}
