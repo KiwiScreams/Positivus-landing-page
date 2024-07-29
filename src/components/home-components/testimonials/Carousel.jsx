@@ -6,7 +6,8 @@ import rightArrow from "../../../assets/images/home/Arrow right.svg";
 import { useRef } from "react";
 import { useEffect } from "react";
 function Carousel({ slides }) {
-    let [current, setCurrent] = useState(0);
+    let [current, setCurrent] = useState(1);
+    const intervalRef = useRef(null);
     let previousSlide = () => {
         if (current === 0) setCurrent(slides.length - 1);
         else setCurrent(current - 1);
