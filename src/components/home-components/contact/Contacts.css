@@ -149,3 +149,46 @@
 {
     border: 1px solid red;
 }
+/* @media screen and (max-width: 800px)
+{
+    .contacts-container
+    {
+        width: 100%;
+        padding: 40px 30px;
+    }
+    .contacts-section .form
+    {
+        width: 100%;
+        margin-left: 100px;
+    }
+    .contacts-section .contacts-header
+    {
+        width: 100%;
+        gap: 30px;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .contacts-section .contacts-header p
+    {
+       width: 100%;
+       text-align: center;
+    }
+    .contacts-container .form .inp textarea
+{
+    width: 100%;
+    padding-left: 20px;
+    font-size: var(--font-size-18);
+    resize: none;
+    padding-top: 18px;
+    height: 130px;
+}
+.form-header
+{
+    width: 100%;
+}
+.form-header input
+{
+    width: 50%;
+}
+
+} */
