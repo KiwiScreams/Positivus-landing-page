@@ -34,24 +34,25 @@
   display: flex;
   justify-content: space-between;
 }
-.contacts-section form
+.contacts-section .form
 {
     outline: none;
     border: none;
     width: 50%;
     margin-left: 100px;
 }
-.contacts-container form .form-body label
+.contacts-container .form .form-body label
 {
     display: block;
     font-size: 16px;
     margin-bottom: 10px;
 }
-.contacts-container form .inp
+.contacts-container .form .inp
 {
     margin-bottom: 26px;
+    position: relative;
 }
-.contacts-container form .inp input
+.contacts-container .form .inp input
 {
     width: 100%;
     border-radius: var(--border-radius-14);
@@ -60,7 +61,7 @@
     padding-left: 30px;
     font-size: var(--font-size-18);
 }
-.contacts-container form .inp textarea
+.contacts-container .form .inp textarea
 {
     width: 100%;
     border-radius: var(--border-radius-14);
@@ -96,7 +97,7 @@
 {
     width: 100%;
 }
-.contacts-container form input[type="radio"]
+.contacts-container .form input[type="radio"]
 {
     appearance: none;
     -webkit-appearance: none;
@@ -109,12 +110,12 @@
     cursor: pointer;
     outline: 1px solid var(--black-clr);
 }
-.contacts-container form input[type="radio"]:checked
+.contacts-container .form input[type="radio"]:checked
 {
   background-color: var(--green-clr);
   border-color: var(--white-clr);
 }
-.contacts-container form input[type="radio"]:checked::before
+.contacts-container .form input[type="radio"]:checked::before
 {
   content: "";
   position: absolute;
@@ -126,3 +127,13 @@
   border-radius: 50%;
   background-color: #fff;
 }
+/* .contacts-container .error
+{
+    color: red;
+    font-weight: 500;
+    background-color: var(--gray-clr);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+@keyframes */
