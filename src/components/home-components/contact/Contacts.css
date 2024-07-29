@@ -32,3 +32,13 @@
   margin: auto;
   overflow: hidden;
 }
+.contacts-section .contacts-container .image-container
+{
+
+}
+.contacts-container form .form-body label
+{
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+}

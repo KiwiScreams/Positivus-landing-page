@@ -34,7 +34,7 @@ function Carousel({ slides }) {
                 </div>
             </div>
             <div className="carousel-bottom flex">
-                <button onClick={previousSlide}><img src={leftArrow} alt="" /></button>
+                <button onClick={previousSlide} disabled={current === null || current === 0} className="arrow-button"><img src={leftArrow} alt="" /></button>
 
                 <div className="flex points">
                     {slides.map((s, i) => {
@@ -47,7 +47,7 @@ function Carousel({ slides }) {
                         )
                     })}
                 </div>
-                <button onClick={nextSlide}><img src={rightArrow} alt="" /></button>
+                <button onClick={nextSlide} disabled={current === null || current === slides.length - 1} className="arrow-button"><img src={rightArrow} alt="" /></button>
             </div>
         </>
     )

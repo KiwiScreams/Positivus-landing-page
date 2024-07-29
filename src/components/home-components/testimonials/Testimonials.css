@@ -96,3 +96,13 @@
 {
   cursor: pointer;
 }
+.arrow-button:disabled
+{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.arrow-button:hover,
+.circle:hover
+{
+  transform: scale(1.5);
+}

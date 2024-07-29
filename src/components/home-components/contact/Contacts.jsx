@@ -8,11 +8,13 @@ function Contacts() {
                     <h2>Contact Us</h2>
                     <p>Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
                 </div>
-                <div className="contacts-container">
+                <div className="contacts-container flex">
                     <form>
-                        <div className="form-header">
-                            <input type="radio" name="hi" id="hi" />
-                            <input type="radio" name="quete" id="quete" />
+                        <div className="form-header flex">
+                            <input type="radio" name="hi" />
+                            <label htmlFor="hi">Say Hi</label>
+                            <input type="radio" name="quete" />
+                            <label htmlFor="hi">Get a Quote</label>
                         </div>
                         <div className="form-body">
                             <div className="inp">
@@ -30,6 +32,9 @@ function Contacts() {
                         </div>
                         <button>Send Message</button>
                     </form>
+                    <div className="image-container">
+                        <img src={contactImage} alt="" />
+                    </div>
                 </div>
             </section>
         </>
