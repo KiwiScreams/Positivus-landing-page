@@ -2,6 +2,8 @@
 {
     width: 90%;
     margin: auto;
+    margin-bottom: 200px;
+    height: auto;
 }
 .team-section .team-header
 {
@@ -72,6 +74,8 @@
     border: 1px solid var(--dark-clr);
     margin-top: 40px;
     float: right;
+    display: block;
+    /* margin-left: 1110px; */
 }
 .team-section button:hover
 {
