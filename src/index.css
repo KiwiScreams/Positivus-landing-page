@@ -15,6 +15,10 @@
   font-family: 'space-grotesk';
   src: url(../src/assets/fonts/Bellefair\,Josefin_Sans\,Space_Grotesk/Space_Grotesk/static/SpaceGrotesk-Regular.ttf);
 }
+body
+{
+  overflow-x: hidden;
+}
 .flex
 {
   display: flex;

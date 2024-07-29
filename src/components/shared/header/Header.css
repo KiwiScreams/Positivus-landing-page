@@ -49,3 +49,125 @@ header .header nav ul
     color: var(--green-clr);
     cursor: pointer;
 }
+header .menu
+{
+    display: none;
+}
+.header-show
+{
+    display: block;
+}
+@media screen and (max-width: 1440px)
+{
+    header
+    {
+        padding: 30px 0;
+    }
+    .header ul li
+    {
+        font-size: var(--font-size-18);
+    }
+    header .header nav ul
+    {
+        gap: 10px;
+    }
+    header button
+    {
+        width: 200px;
+        height: 60px;
+        font-size: var(--font-size-18);
+    }
+    header .header
+    {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 990px)
+{
+    header
+    {
+        padding: 10px 0;
+    }
+    .header ul li
+    {
+        font-size: 16px;
+    }
+    header .header nav ul
+    {
+        gap: 5px;
+    }
+    header button
+    {
+        width: 180px;
+        height: 50px;
+        font-size: 16px;
+    }
+    header .header
+    {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 880px)
+{
+    header
+    {
+        padding: 8px 0;
+    }
+    .header ul li
+    {
+        font-size: 16px;
+        color: var(--green-clr);
+        width: 100%;
+        margin: 0;
+    }
+    header .header ul li:nth-child(2)
+    {
+        margin-top: 50px;
+    }
+    header .header ul
+    {
+        top: 40px;
+        left: 0;
+        right: 0;
+        position: absolute;
+    }
+    .header ul li a
+    {
+        width: 100%;
+        display: block;
+        border-radius: 25px;
+        padding: 10px;
+        text-align: center;
+        -webkit-box-shadow: 0 10px 10px#00000018;
+        box-shadow: 0 10px 10px #00000018;
+        background-color: var(--white-clr);
+    }
+    .header-bg
+    {
+        padding: 0;
+    }
+    header button
+    {
+        width: 180px;
+        height: 50px;
+        font-size: 16px;
+        display: none;
+    }
+    header .menu
+    {
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+    header .header nav ul
+    {
+        flex-direction: column;
+    }
+    .header-bg ul li a
+    {
+        background-color: var(--green-clr);
+        color: var(--black-clr);
+    }
+}

@@ -15,7 +15,7 @@ function Footer() {
                             <li><Link to="aboutus" spy={true} smooth={true} offset={-100} duration={500}>About us</Link></li>
                             <li><Link to="services" spy={true} smooth={true} offset={-100} duration={500}>Services</Link></li>
                             <li><Link to="cases" spy={true} smooth={true} offset={-100} duration={500}>Use Cases</Link></li>
-                            <li><Link>Pricing</Link></li>
+                            <li>Pricing</li>
                             <li><Link to="team" spy={true} smooth={true} offset={-100} duration={500}>Blog</Link></li>
                         </ul>
                     </div>
