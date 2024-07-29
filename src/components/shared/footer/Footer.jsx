@@ -2,20 +2,21 @@ import whiteLogo from "../../../assets/images/home/whiteLogo.svg";
 import social_1 from "../../../assets/images/home/social_1.svg";
 import social_2 from "../../../assets/images/home/social_2.svg";
 import social_3 from "../../../assets/images/home/social_3.svg";
+import { Link } from "react-scroll";
 import "./Footer.css"
 function Footer() {
     return (
         <>
             <footer>
                 <div className="footer-header flex">
-                    <h1><img src={whiteLogo} /></h1>
+                    <h1><Link to="home" spy={true} smooth={true} offset={-100} duration={500}><img src={whiteLogo} /></Link></h1>
                     <div className="footer-links">
                         <ul className="flex">
-                            <li>About us</li>
-                            <li>Services</li>
-                            <li>Use Cases</li>
-                            <li>Pricing</li>
-                            <li>Blog</li>
+                            <li><Link to="aboutus" spy={true} smooth={true} offset={-100} duration={500}>About us</Link></li>
+                            <li><Link to="services" spy={true} smooth={true} offset={-100} duration={500}>Services</Link></li>
+                            <li><Link to="cases" spy={true} smooth={true} offset={-100} duration={500}>Use Cases</Link></li>
+                            <li><Link>Pricing</Link></li>
+                            <li><Link to="team" spy={true} smooth={true} offset={-100} duration={500}>Blog</Link></li>
                         </ul>
                     </div>
                     <div className="footer-social-links flex">
