@@ -3,6 +3,17 @@ header
     width: 100%;
     padding-top: 60px;
     position: fixed;
+    top: 0;
+}
+.header-bg
+{
+    background-color: var(--green-clr);
+    padding-top: 0;
+    padding: 8px 0;
+}
+.header-bg a:hover
+{
+    color: var(--white-clr);
 }
 header button
 {
@@ -36,9 +47,4 @@ header .header nav ul
 {
     color: var(--green-clr);
     cursor: pointer;
-}
-.header-bg
-{
-    background-color: red;
-    color: white;
 }
