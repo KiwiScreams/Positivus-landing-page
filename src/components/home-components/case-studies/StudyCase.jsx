@@ -3,7 +3,7 @@ import arrow from "../../../assets/images/home/arrow.svg"
 function StudyCase() {
     return (
         <>
-            <section className="case-section">
+            <section className="case-section" id="cases">
                 <div className="case-header">
                     <h2>Case Studies</h2>
                     <p>Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>

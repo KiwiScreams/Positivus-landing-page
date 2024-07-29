@@ -73,9 +73,11 @@
   background: url(../../../assets/images/home/Bubble.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding: 98px 52px;
+  padding: 58px 202px;
+  text-align: center;
   height: 336px;
   width: 100%;
+  overflow-wrap: break-word;
 }
 .carousel-bottom
 {

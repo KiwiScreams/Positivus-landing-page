@@ -3,7 +3,7 @@ import "./Team.css"
 function Team() {
     return (
         <>
-            <section className="team-section">
+            <section className="team-section" id="team">
                 <div className="team-header">
                     <h2>Team</h2>
                     <p>Meet the skilled and experienced team behind our successful digital marketing strategies</p>

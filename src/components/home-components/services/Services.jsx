@@ -12,7 +12,7 @@ import arrow_2 from "../../../assets/images/home/arrow_2.png"
 function Services() {
     return (
         <>
-            <section className="service-section">
+            <section className="service-section" id="services">
                 <div className="service-header flex">
                     <h2>Services</h2>
                     <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include</p>

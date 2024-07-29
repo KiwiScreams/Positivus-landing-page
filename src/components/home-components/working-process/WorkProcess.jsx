@@ -3,7 +3,7 @@ import "./WorkProcess.css"
 function WorkProcess() {
     return (
         <>
-            <section className="work-section">
+            <section className="work-section" id="aboutus">
                 <div className="work-header">
                     <h2>Our Working Process</h2>
                     <p>Step-by-Step Guide to Achieving Your Business Goals</p>
