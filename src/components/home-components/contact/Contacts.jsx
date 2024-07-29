@@ -14,18 +14,23 @@ function Contacts() {
         e.preventDefault();
         const errors = {};
         if (!name_regex.test(name)) {
-            errors.name = 'Invalid username';
+            errors.name = <i className="fa-solid fa-circle-exclamation"></i>;
+        } else {
+            errors.name = <i className="fa-solid fa-check"></i>;
         }
         if (!email_regex.test(email)) {
-            errors.email = 'Invalid E-mail address';
+            errors.email = <i className="fa-solid fa-circle-exclamation"></i>;
+        } else {
+            errors.email = <i className="fa-solid fa-check"></i>;
         }
         if (message.trim() === '') {
-            errors.message = 'Message is required';
+            errors.message = <i className="fa-solid fa-circle-exclamation"></i>;
+        } else {
+            errors.message = <i className="fa-solid fa-check"></i>;
         }
         setErrors(errors);
         if (Object.keys(errors).length === 0) {
             setIsSubmitted(true);
-            setSuccessMessage('Message sent successfully!')
             setTimeout(() => {
                 setIsSubmitted(false);
                 setSuccessMessage('');
@@ -53,17 +58,17 @@ function Contacts() {
                         <div className="form-body">
                             <div className="inp">
                                 <label htmlFor="name">Name</label>
-                                <input type="text" name="name" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
+                                <input type="text" name="name" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} className={errors.name && errors.name.props.className === 'fa-solid fa-check' ? 'valid' : ''}/>
                                 {errors.name && <div className="error">{errors.name}</div>}
                             </div>
                             <div className="inp">
                                 <label htmlFor="name">Email*</label>
-                                <input type="email" name="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                                <input type="email" name="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} className={errors.email && errors.email.props.className === 'fa-solid fa-check' ? 'valid' : ''} />
                                 {errors.email && <div className="error">{errors.email}</div>}
                             </div>
                             <div className="inp">
                                 <label htmlFor="name">Message*</label>
-                                <textarea placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+                                <textarea placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)} className={errors.message && errors.message.props.className === 'fa-solid fa-check' ? 'valid' : ''}></textarea>
                                 {errors.message && <div className="error">{errors.message}</div>}
                             </div>
                         </div>
