@@ -44,6 +44,30 @@ header .header nav ul
     padding: 10px 10px;
     font-size: var(--font-size-20);
 }
+.header ul li:nth-child(1)
+{
+    animation: navigationAnim 0.2s ease-in-out;
+}
+.header ul li:nth-child(2)
+{
+    animation: navigationAnim 0.4s ease-in-out;
+}
+.header ul li:nth-child(3)
+{
+    animation: navigationAnim 0.6s ease-in-out;
+}
+.header ul li:nth-child(4)
+{
+    animation: navigationAnim 0.8s ease-in-out;
+}
+.header ul li:nth-child(5)
+{
+    animation: navigationAnim 1s ease-in-out;
+}
+.header ul li:nth-child(6)
+{
+    animation: navigationAnim 1.2s ease-in-out;
+}
 .header ul li:hover
 {
     color: var(--green-clr);
@@ -66,6 +90,17 @@ ul.header-hide
 .request-btn-hidden
 {
     display: none;
+}
+@keyframes navigationAnim
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
 }
 @media screen and (max-width: 880px)
 {
