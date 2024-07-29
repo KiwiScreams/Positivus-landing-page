@@ -38,6 +38,13 @@ function Footer() {
                         <button>Subscribe to news</button>
                     </div>
                 </div>
+                <div className="footer-bottom flex">
+                    <p>© 2023 Positivus. All Rights Reserved.</p>
+                    <ul className="flex">
+                        <li>Privacy</li>
+                        <li>Policy</li>
+                    </ul>
+                </div>
             </footer>
         </>
     )

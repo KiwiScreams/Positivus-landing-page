@@ -51,9 +51,9 @@ footer .footer-body p
 }
 footer .footer-body .subscribe
 {
-    background-color: var(--dark-clr);
-    border-radius: var(--border-radius-45);
-    padding: 50px 40px;
+    background-color: #292A32;
+    border-radius: var(--border-radius-14);
+    padding: 60px 40px;
     gap: 20px;
 }
 footer button
@@ -81,4 +81,20 @@ footer input
     border: 1px solid var(--white-clr);
     background-color: transparent;
     color: var(--white-clr);
+}
+footer .footer-bottom
+{
+    width: fit-content;
+    gap: 40px;
+    font-size: var(--font-size-18);
+    color: var(--white-clr);
+}
+footer .footer-bottom p
+{
+    color: var(--white-clr);
+}
+footer .footer-bottom ul li
+{
+    text-decoration: underline;
+    margin-right: 8px;
 }
