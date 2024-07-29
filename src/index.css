@@ -8,11 +8,12 @@
   border: none;
   outline: none;
   transition: 0.3s;
+  font-family: 'space-grotesk';
 }
 @font-face
 {
   font-family: 'space-grotesk';
-  src: url(../src/assets/fonts/Bellefair\,Josefin_Sans\,Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf);
+  src: url(../src/assets/fonts/Bellefair\,Josefin_Sans\,Space_Grotesk/Space_Grotesk/static/SpaceGrotesk-Regular.ttf);
 }
 .flex
 {
