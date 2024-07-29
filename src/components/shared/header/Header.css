@@ -38,6 +38,7 @@ header .header
 header .header nav ul
 {
     gap: 40px;
+    display: flex;
 }
 .header ul li
 {
@@ -75,17 +76,9 @@ header .header nav ul
 }
 header .menu
 {
-    display: block;
+    display: none;
     z-index: 22;
     cursor: pointer;
-}
-ul.header-show
-{
-    display: block;
-}
-ul.header-hide
-{
-    display: none;
 }
 .request-btn-hidden
 {
@@ -102,12 +95,8 @@ ul.header-hide
         opacity: 1;
     }
 }
-@media screen and (max-width: 880px)
+@media screen and (max-width: 960px)
 {
-    header
-    {
-        padding: 8px 0;
-    }
     .header ul li
     {
         font-size: 16px;
@@ -176,13 +165,17 @@ ul.header-hide
         background-color: var(--green-clr);
         color: var(--black-clr);
     }
+    nav.header-show
+    {
+        display: block;
+    }
+    nav.header-hide
+    {
+        display: none;
+    }
 }
 @media screen and (max-width: 990px)
 {
-    header
-    {
-        padding: 10px 0;
-    }
     .header ul li
     {
         font-size: 16px;
@@ -207,7 +200,7 @@ ul.header-hide
 {
     header
     {
-        padding: 30px 0;
+        padding: 0;
     }
     .header ul li
     {
@@ -228,4 +221,8 @@ ul.header-hide
         width: 100%;
         padding: 0 20px;
     }
+}
+@media screen and (min-width: 1440px)
+{
+
 }
