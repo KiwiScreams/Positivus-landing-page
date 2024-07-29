@@ -3,7 +3,6 @@
     width: 90%;
     margin: auto;
     margin-bottom: 100px;
-    background: pink;
 }
 .testimonials-section .testimonials-header
 {
@@ -25,132 +24,65 @@
 }
 .testimonials-container
 {
-    background-color: var(--dark-clr);
-    padding: 80px 0 70px 0;
-    width: 100%;
-    margin: auto;
-    /* overflow: hidden; */
-}
-/*
-.testimonials-container .text
-{
-    padding: 48px 52px;
-    width: 656px;
-    height: 266px;
-    background-image: url(../../../assets/images/home/Bubble.svg);
-    background-repeat: no-repeat;
-    margin: auto;
-}
-.testimonials-container .text p
-{
-    color: var(--white-clr);
-}
-.carousel
-{
-    background-color: red;
-    
-}
-.flex-row
-{
-    justify-content: center;
-    display: flex;
-    gap: 20px;
+  background-color: var(--dark-clr);
+  padding: 80px 0 70px 0;
+  width: 100%;
+  border-radius: var(--border-radius-45);
+  margin: auto;
 }
 .carousel-container
 {
-    height: 626px;
+ overflow: hidden;
+ position: relative;
+ width: 60%;
+ margin: auto;
 }
-.carousel-container .slides-container
+.carousel
 {
-    overflow: hidden;
-    display: flex;
+ display: flex;
+ transition: 0.5s ease-out;
 }
-.carousel-container .slide
+.carousel .slide
 {
-    background-image: url(../../../assets/images/home/Bubble.svg);
-    width: 600px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 266px;
-    padding: 48px 52px;
+  margin-bottom: 80px;
 }
-.carousel-container .slide p
+.carousel .slide h4.name
 {
-    color: var(--white-clr);
-} */
-/* .carousel-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  .slides-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .slide {
-    position: relative;
-    width: 50%;
-    height: 50vh;
-    margin: 0 10px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transform: scale(0.5);
-    transition: transform 0.5s;
-  }
-  
-  .slide.active {
-    transform: scale(1);
-  }
-  
-  .slide:not(.active) {
-    opacity: 0.5;
-  }
-  
-  .flex-row {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  button {
-    background-color: transparent;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  button img {
-    width: 20px;
-    height: 20px;
-  } */
-   .ahaha
-   {
-    overflow: hidden;
-    position: relative;
-   }
-   .haha
-   {
-    display: flex;
-    transition: 0.5s ease-out;
-   }
-   .koko
-   {
-    background-color: blue;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-   }
+  color: var(--green-clr);
+  margin-left: 130px;
+  margin-top: 20px;
+}
+.carousel .slide h4.job
+{
+  color: var(--white-clr);
+  margin-left: 130px;
+}
+.carousel .slide p
+{
+  color: var(--white-clr);
+  background: url(../../../assets/images/home/Bubble.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 98px 52px;
+  height: 336px;
+  width: 100%;
+}
+.carousel-bottom
+{
+  width: 50%;
+  margin: auto;
+}
+.carousel-bottom .points
+{
+  width: 30%;
+  gap: 20px;
+}
+.carousel-bottom button
+{
+  background-color: transparent;
+}
+.carousel-bottom button,
+.carousel-bottom .circle
+{
+  cursor: pointer;
+}
