@@ -32,10 +32,10 @@ function Footer() {
                         <p>Phone: 555-567-8901</p>
                         <p>Address: 1234 Main St
                             <br />
-                        Moonstone City, Stardust State 12345</p>
+                            Moonstone City, Stardust State 12345</p>
                     </div>
                     <div className="subscribe flex">
-                        <input type="email" name="subsscribeEmail" placeholder="Email"/>
+                        <input type="email" name="subsscribeEmail" placeholder="Email" />
                         <button>Subscribe to news</button>
                     </div>
                 </div>
@@ -45,6 +45,11 @@ function Footer() {
                         <li>Privacy</li>
                         <li>Policy</li>
                     </ul>
+                    <div className='flex creator'>
+                        <li>Created by <a href="https://github.com/KiwiScreams" target='_blank' id='SLM'><span>S</span><span>L</span><span>M</span></a>
+                        <i className="fa-brands fa-github"></i></li>
+                        <li><a href="https://www.figma.com/community/file/1230604708032389430/positivus-landing-page-design?searchSessionId=lz767um2-wmsn8m7wtv8" target='_blank'>Design in Figma</a><i className="fa-brands fa-figma"></i></li>
+                    </div>
                 </div>
             </footer>
         </>

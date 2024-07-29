@@ -106,3 +106,33 @@ footer .footer-bottom ul li:hover
     color: var(--green-clr);
     text-decoration-color: var(--green-clr);
 }
+#SLM span:nth-child(1)
+{
+    color: red;
+}
+#SLM span:nth-child(2)
+{
+    color: green;
+}
+#SLM span:nth-child(3)
+{
+    color: blue;
+}
+#SLM:hover span
+{
+    margin-right: 10px;
+}
+#SLM
+{
+    padding: 20px 0;
+}
+footer .creator
+{
+    gap: 50px;
+    margin-left: 200px;
+}
+footer .creator a
+{
+    color: var(--white-clr);
+    margin-right: 10px;
+}
