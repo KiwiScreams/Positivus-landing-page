@@ -36,8 +36,8 @@ function Accordion() {
                         <div
                             className="accordion-header flex">
                             <div className="text flex">
-                            <h1>{panel.number}</h1>
-                            <h3>{panel.title}</h3>
+                            <h2>{panel.number}</h2>
+                            <h4>{panel.title}</h4>
                             </div>
                             <span className={activePanel === panel.id ? "active" : ""}>
                             </span>
