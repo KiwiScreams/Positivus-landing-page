@@ -10,7 +10,6 @@ function Team() {
                 </div>
                 <div className="team-container flex">
                     <Person />
-                    {/* <button>See all team</button> */}
                 </div>
                 <button>See all team</button>
 
