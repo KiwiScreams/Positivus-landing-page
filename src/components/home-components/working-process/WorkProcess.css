@@ -56,11 +56,13 @@
     align-items: center;
     background-image: url(../../../assets/images/home/+.svg);
     background-repeat: no-repeat;
+    background-color: var(--gray-clr);
     background-position: center;
 }
 .accordion-header span.active
 {
     background-image: url(../../../assets/images/home/-.svg);
+    background-color: var(--gray-clr);
 }
 .accordion-content
 {

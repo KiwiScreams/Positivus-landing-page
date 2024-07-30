@@ -1,51 +1,85 @@
-.case-section
-{
+.case-section {
     width: 90%;
     margin: auto;
 }
-.case-section .case-header
-{
+
+.case-section .case-header {
     width: 60%;
     display: flex;
     align-items: center;
     gap: 40px;
     margin-bottom: 80px;
 }
-.case-section .case-header p
-{
+
+.case-section .case-header p {
     width: 50%;
 }
-.case-section .case-header h2
-{
+
+.case-section .case-header h2 {
     background-color: var(--green-clr);
     padding: 5px 7px;
     border-radius: var(--border-radius-7);
 }
-.case-container
-{
+
+.case-container {
     background-color: var(--dark-clr);
     padding: 70px 0;
     border-radius: var(--border-radius-45);
     margin-bottom: 140px;
 }
-.case-container .case
-{
+
+.case-container .case {
     padding: 0 60px;
     border-left: 1px solid var(--white-clr);
 }
-.case-container .case p
-{
+
+.case-container .case p {
     color: var(--white-clr);
     margin-bottom: 20px;
 }
-.case-container .case button
-{
+
+.case-container .case button {
     gap: 10px;
     background-color: transparent;
     color: var(--green-clr);
     font-size: var(--font-size-20);
 }
-.case-container .case button:hover img
-{
+
+.case-container .case button:hover img {
     margin-left: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .case-section .case-header {
+        width: 100%;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .case-section .case-header p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .case-section .case-header h2 {
+        text-align: center;
+        margin: auto;
+    }
+
+    .case-container {
+        padding: 0px 0;
+        background-color: transparent;
+        width: 100%;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .case-container .case {
+        padding: 0 60px;
+        border-left: 0px solid;
+        background-color: var(--dark-clr);
+        padding: 40px 50px;
+        border-radius: var(--border-radius-45);
+        width: 100%;
+    }
 }
