@@ -1,29 +1,28 @@
-.testimonials-section
-{
-    width: 90%;
-    margin: auto;
-    margin-bottom: 100px;
+.testimonials-section {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 100px;
 }
-.testimonials-section .testimonials-header
-{
-    width: 60%;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    margin-bottom: 80px;
+
+.testimonials-section .testimonials-header {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 80px;
 }
-.testimonials-section .testimonials-header p
-{
-    width: 50%;
+
+.testimonials-section .testimonials-header p {
+  width: 50%;
 }
-.testimonials-section .testimonials-header h2
-{
-    background-color: var(--green-clr);
-    padding: 5px 7px;
-    border-radius: var(--border-radius-7);
+
+.testimonials-section .testimonials-header h2 {
+  background-color: var(--green-clr);
+  padding: 5px 7px;
+  border-radius: var(--border-radius-7);
 }
-.testimonials-container
-{
+
+.testimonials-container {
   background-color: var(--dark-clr);
   padding: 80px 0 70px 0;
   width: 100%;
@@ -32,43 +31,43 @@
   margin: auto;
   overflow: hidden;
 }
-.carousel-container
-{
- position: relative;
- width: 60%;
- margin: auto;
+
+.carousel-container {
+  position: relative;
+  width: 60%;
+  margin: auto;
 }
-.carousel
-{
- display: flex;
- transition: 0.5s ease-out;
+
+.carousel {
+  display: flex;
+  transition: 0.5s ease-out;
 }
-.carousel .slide
-{
+
+.carousel .slide {
   margin-bottom: 80px;
   margin-left: 50px;
 }
-.carousel .slide:first-child
-{
+
+.carousel .slide:first-child {
   margin-left: 0;
 }
-.carousel .slide:last-child
-{
+
+.carousel .slide:last-child {
   margin-right: 0;
 }
-.carousel .slide h4.name
-{
+
+.carousel .slide h4.name {
   color: var(--green-clr);
   margin-left: 130px;
   margin-top: 20px;
 }
-.carousel .slide h4.job
-{
+
+.carousel .slide h4.job {
   color: var(--white-clr);
   margin-left: 130px;
 }
-.carousel .slide p
-{
+
+.carousel .slide p {
   color: var(--white-clr);
   background: url(../../../assets/images/home/Bubble.svg);
   background-repeat: no-repeat;
@@ -79,32 +78,45 @@
   width: 100%;
   overflow-wrap: break-word;
 }
-.carousel-bottom
-{
+
+.carousel-bottom {
   width: 50%;
   margin: auto;
 }
-.carousel-bottom .points
-{
+
+.carousel-bottom .points {
   width: 30%;
   gap: 20px;
 }
-.carousel-bottom button
-{
+
+.carousel-bottom button {
   background-color: transparent;
 }
+
 .carousel-bottom button,
-.carousel-bottom .circle
-{
+.carousel-bottom .circle {
   cursor: pointer;
 }
-.arrow-button:disabled
-{
+
+.arrow-button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
 .arrow-button:hover,
-.circle:hover
-{
+.circle:hover {
   transform: scale(1.5);
+}
+
+@media screen and (max-width: 800px) {
+  .testimonials-section .testimonials-header {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+
+  .testimonials-section .testimonials-header p {
+    width: 100%;
+    text-align: center;
+  }
 }

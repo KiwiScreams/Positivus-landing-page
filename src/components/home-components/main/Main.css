@@ -1,24 +1,23 @@
-.main-section
-{
+.main-section {
     width: 90%;
     margin: auto;
     margin-top: 200px;
     display: flex;
     justify-content: space-between;
 }
-.main-section .info-container h1
-{
+
+.main-section .info-container h1 {
     letter-spacing: 1px;
 }
-.main-section .info-container
-{
+
+.main-section .info-container {
     margin-right: 100px;
     display: flex;
     flex-direction: column;
     gap: 36px;
 }
-.main-section .info-container button
-{
+
+.main-section .info-container button {
     width: 264px;
     height: 68px;
     font-size: var(--font-size-20);
@@ -27,22 +26,22 @@
     border-radius: var(--border-radius-14);
     border: 1px solid var(--dark-clr);
 }
-.main-section .info-container button:hover
-{
+
+.main-section .info-container button:hover {
     background-color: transparent;
     color: var(--black-clr);
 }
-.main-section .info-container, 
-.main-section .image-container
-{
+
+.main-section .info-container,
+.main-section .image-container {
     width: 40%;
 }
-.main-section .image-container img
-{
+
+.main-section .image-container img {
     width: 100%;
 }
-.image-section
-{
+
+.image-section {
     width: 90%;
     margin: auto;
     margin-top: 70px;
@@ -51,28 +50,41 @@
     align-content: center;
     margin-bottom: 140px;
 }
-.image-section img
-{
+
+.image-section img {
     filter: grayscale(100%);
     cursor: pointer;
 }
-.image-section img:hover
-{
+
+.image-section img:hover {
     transform: scale(1.2);
 }
-.form-header
-{
+
+.form-header {
     width: fit-content;
     gap: 10px;
     margin-bottom: 40px;
 }
-.form-header label
-{
+
+.form-header label {
     margin-right: 35px;
     font-size: var(--font-size-18);
 }
-.form-header input[type="radio"]
-{
+
+.form-header input[type="radio"] {
     width: 28px;
     height: 28px;
+}
+
+@media screen and (max-width: 1000px) {
+    .image-section {
+        width: 90%;
+        margin: auto;
+        margin-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        margin-bottom: 140px;
+    }
 }

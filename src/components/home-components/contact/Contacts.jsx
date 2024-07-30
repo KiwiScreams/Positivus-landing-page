@@ -74,6 +74,7 @@ function Contacts() {
                         <img src={contactImage} alt="" />
                     </div>
                 </div>
+                <button onClick={handleSubmit} className="none">Send Message</button>
             </section>
         </>
     )
