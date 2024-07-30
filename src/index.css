@@ -1,5 +1,4 @@
-*
-{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,23 +9,23 @@
   transition: 0.3s;
   font-family: 'space-grotesk';
 }
-@font-face
-{
+
+@font-face {
   font-family: 'space-grotesk';
   src: url(../src/assets/fonts/Bellefair\,Josefin_Sans\,Space_Grotesk/Space_Grotesk/static/SpaceGrotesk-Regular.ttf);
 }
-body
-{
+
+body {
   overflow-x: hidden;
 }
-.flex
-{
+
+.flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-:root
-{
+
+:root {
   /* COLORS */
   --green-clr: #B9FF66;
   --dark-clr: #191a23;
@@ -45,47 +44,70 @@ body
   --font-size-28: 28px;
   --font-size-18: 18px;
 }
+
 /* DESKTOP */
-h1
-{
+h1 {
   color: var(--black-clr);
   font-size: var(--font-size-60);
 }
-h2
-{
+
+h2 {
   font-size: var(--font-size-40);
   color: var(--black-clr);
 }
-h3
-{
+
+h3 {
   font-size: var(--font-size-30);
   color: var(--black-clr);
 }
-h4
-{
+
+h4 {
   font-size: var(--font-size-20);
   color: var(--black-clr);
 }
-p
-{
+
+p {
   font-size: var(--font-size-18);
   color: var(--black-clr);
 }
-button, a
-{
+
+button,
+a {
   cursor: pointer;
 }
-::-webkit-scrollbar
-{
+
+::-webkit-scrollbar {
   display: block;
   width: 10px;
 }
-::-webkit-scrollbar-track
-{
+
+::-webkit-scrollbar-track {
   background-color: var(--white-clr);
 }
-::-webkit-scrollbar-thumb
-{
+
+::-webkit-scrollbar-thumb {
   background-color: var(--green-clr);
   border-radius: 20px;
+}
+
+@media screen and (max-width:500px) {
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }

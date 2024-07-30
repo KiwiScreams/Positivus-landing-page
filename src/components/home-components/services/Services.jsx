@@ -95,7 +95,7 @@ function Services() {
                                 <h3>Tracking</h3>
                             </div>
                             <div className="learn-btn">
-                                <img src={arrow_2} alt="" />Learn more
+                                <img src={arrow_2} alt="" /><span className="learn-span">Learn more</span>
                             </div>
                         </div>
                         <div className="service-image">

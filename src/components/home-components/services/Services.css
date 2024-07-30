@@ -1,22 +1,21 @@
-.service-section
-{
+.service-section {
     width: 90%;
     margin: auto;
 }
-.service-section .service-header
-{
+
+.service-section .service-header {
     width: 50%;
     gap: 50px;
     margin-bottom: 80px;
 }
-.service-section .service-header h2
-{
+
+.service-section .service-header h2 {
     background-color: var(--green-clr);
     padding: 5px 7px;
     border-radius: var(--border-radius-7);
 }
-.service-container
-{
+
+.service-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,9 +23,9 @@
     gap: 40px;
     margin-bottom: 120px;
 }
-.service-container .service
-{
-    width: calc(50% - 20px);    
+
+.service-container .service {
+    width: calc(50% - 20px);
     height: 320px;
     border-radius: var(--border-radius-45);
     padding: 50px;
@@ -36,60 +35,122 @@
     justify-content: space-between;
     align-items: center;
 }
-.service-container .service:hover
-{
+
+.service-container .service:hover {
     box-shadow: none;
 }
-.service h3
-{
+
+.service h3 {
     border-radius: var(--border-radius-7);
     width: fit-content;
     padding: 2px 7px;
 }
-.service .text .name
-{
+
+.service .text .name {
     margin-bottom: 90px;
 }
-.service .learn-btn
-{
+
+.service .learn-btn {
     display: flex;
     align-items: center;
     gap: 16px;
     font-size: var(--font-size-28);
     cursor: pointer;
 }
+
 .service-container .service:nth-child(3) .learn-btn,
-.service-container .service:nth-child(6) .learn-btn
-{
+.service-container .service:nth-child(6) .learn-btn {
     color: var(--white-clr);
 }
+
 .service-container .service:nth-child(1),
-.service-container .service:nth-child(4)
-{
+.service-container .service:nth-child(4) {
     background-color: var(--gray-clr);
 }
+
 .service-container .service:nth-child(1) h3,
-.service-container .service:nth-child(4) h3
-{
+.service-container .service:nth-child(4) h3 {
     background-color: var(--green-clr);
 }
+
 .service-container .service:nth-child(2),
 .service-container .service:nth-child(5),
-.service-container .service:nth-child(6) h3
-{
+.service-container .service:nth-child(6) h3 {
     background-color: var(--green-clr);
 }
+
 .service-container .service:nth-child(2) h3,
-.service-container .service:nth-child(5) h3
-{
+.service-container .service:nth-child(5) h3 {
     background-color: var(--gray-clr);
 }
+
 .service-container .service:nth-child(3),
-.service-container .service:nth-child(6)
-{
+.service-container .service:nth-child(6) {
     background-color: var(--dark-clr);
 }
-.service-container .service:nth-child(3) h3
-{
+
+.service-container .service:nth-child(3) h3 {
     background-color: var(--white-clr);
+}
+
+.learn-btn span.learn-span {
+    display: block;
+}
+
+@media screen and (max-width:500px) {
+    .service-container {
+        flex-direction: column;
+    }
+
+    .service-section .service-header {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .service-container .service {
+        padding: 10px;
+    }
+
+    .learn-btn span.learn-span {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .service-container {
+        flex-direction: column;
+    }
+
+    .service-section .service-header {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .service-container .service {
+        width: 100%;
+        height: 320px;
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .service-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-bottom: 120px;
+    }
+
+    .service-container .service {
+        height: 320px;
+        border-radius: var(--border-radius-45);
+        padding: 20px;
+        border: 1px solid var(--black-clr);
+        box-shadow: 0 7px 0 0 var(--black-clr);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
